@@ -1,0 +1,91 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id={{ site.google_tag_manager }}"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header id="site_header" class="header mobile-menu-hide">
+  <div class="header-content">
+    <div class="header-photo">
+      <img src="{{ "{{ site.url }}{{ site.baseurl }}/assets/images/dfs.jpg" | relative_url }}" alt="">
+    </div>
+    <div class="header-titles">
+      <h2>{{site.title}}</h2>
+      <h4>Invited Assistant Professor &bull; Researcher</h4>
+    </div>
+  </div>
+  
+  <div class="social-links">
+    <ul>
+      <li><a href="https://www.linkedin.com/in/diogo-f-soares-027917177/"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="https://github.com/dfmsoares"><i class="fa fa fa-github"></i></a></li>
+      <li><a href="https://scholar.google.com/citations?user=OMpJuA4AAAAJ&hl=en"><i class="ai ai-google-scholar"></i></a></li>
+      <li><a href="https://orcid.org/0000-0003-3503-0755"><i class="ai ai-orcid"></i></a></li>
+      <li><a href="https://www.researchgate.net/profile/Diogo-Soares-2"><i class="ai ai-researchgate"></i></a></li>
+      <li><a href="https://www.cienciavitae.pt//pt/D713-C08C-A84A"><i class="ai ai-ciencia-vitae"></i></a></li>
+    </ul>
+    <hr>
+  </div>
+    
+    <ul class="main-menu">
+      <li class="active">
+        {% if page.title == 'Home' %}
+        <a href="#home" class="nav-anim">
+        {% else %}
+        <a href="{{ site.url }}#home" class="nav-anim">
+        {% endif %}
+          <span class="menu-icon lnr lnr-home"></span>
+            <span class="link-text">Home</span>
+        </a>
+      </li>
+        <li>
+          {% if page.title == 'Home' %}
+          <a href="#publications" class="nav-anim">
+          {% else %}
+          <a href="{{ site.url }}#publications" class="nav-anim">
+          {% endif %}
+                <span class="menu-icon lnr lnr-book"></span>
+                <span class="link-text">Publications</span>
+            </a>
+        </li>
+        <li>
+          {% if page.title == 'Home' %}
+          <a href="#teaching" class="nav-anim">
+          {% else %}
+          <a href="{{ site.url }}#teaching" class="nav-anim">
+          {% endif %}
+                <span class="menu-icon lnr lnr-graduation-hat"></span>
+                <span class="link-text">Teaching</span>
+            </a>
+        </li>
+        <li>
+          {% if page.title == 'Home' %}
+          <a href="#software" class="nav-anim">
+          {% else %}
+          <a href="{{ site.url }}#software" class="nav-anim">
+          {% endif %}
+                <span class="menu-icon lnr lnr-code"></span>
+                <span class="link-text">Software</span>
+            </a>
+        </li>
+        <!-- <li>
+          {% if page.title == 'Home' %}
+          <a href="#blog" class="nav-anim">
+          {% else %}
+          <a href="{{ site.url }}#blog" class="nav-anim">
+          {% endif %}
+                <span class="menu-icon lnr lnr-bubble"></span>
+                <span class="link-text">Blog</span>
+            </a>
+        </li>     -->
+    </ul>
+
+
+    <div class="copyrights">© 2024 All rights reserved.</div>
+  </header>
+
+   <!-- Mobile Navigation -->
+   <div class="menu-toggle">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
