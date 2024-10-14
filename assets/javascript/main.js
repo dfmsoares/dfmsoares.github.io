@@ -33,11 +33,11 @@
     function customScroll() {
         var windowWidth = $(window).width();
         if (windowWidth > 1024) {
-            $('.animated-section, .single-page-content').each(function() {
+            $('.animated-section, .single-page-content, .header').each(function() {
                 $(this).perfectScrollbar();
             });
         } else {
-            $('.animated-section, .single-page-content').each(function() {
+            $('.animated-section, .single-page-content, .header').each(function() {
                 $(this).perfectScrollbar('destroy');
             });
         }
@@ -52,7 +52,7 @@
         }
     }).on('resize', function() {
         mobileMenuHide();
-        $('.animated-section').each(function() {
+        $('.animated-section, .header').each(function() {
             $(this).perfectScrollbar('update');
         });
         customScroll();
