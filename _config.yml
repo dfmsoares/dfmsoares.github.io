@@ -46,9 +46,15 @@ highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
+safe: true
+source: dfsoares.github.io/
+gist:
+  noscript: false
 
 # Markdown Processing
 kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
   input: GFM
   hard_wrap: false
   auto_ids: true
