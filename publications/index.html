@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Home - Diogo F. Soares</title>
+  <title>Publications - Diogo F. Soares</title>
   <meta name="description" content="Academic webpage of Dr. Richard Feynman">
-  <!-- <link rel="canonical" href="http://localhost:4000/"> -->
+  <!-- <link rel="canonical" href="http://localhost:4000/publications/"> -->
   <!-- <link rel="shortcut icon" type ="image/x-icon" href="http://localhost:4000/favicon.ico"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/assets/css/bootstrap-grid.min.css">
@@ -88,7 +88,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <ul class="main-menu">
       <li class="active">
         
-        <a href="#home" class="nav-anim">
+        <a href="http://localhost:4000#home" class="nav-anim">
         
           <span class="menu-icon lnr lnr-home"></span>
             <span class="link-text">Home</span>
@@ -96,7 +96,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </li>
         <li>
           
-          <a href="#publications" class="nav-anim">
+          <a href="http://localhost:4000#publications" class="nav-anim">
           
                 <span class="menu-icon lnr lnr-book"></span>
                 <span class="link-text">Publications</span>
@@ -104,7 +104,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </li>
         <li>
           
-          <a href="#teaching" class="nav-anim">
+          <a href="http://localhost:4000#teaching" class="nav-anim">
           
                 <span class="menu-icon lnr lnr-graduation-hat"></span>
                 <span class="link-text">Teaching</span>
@@ -112,7 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </li>
         <li>
           
-          <a href="#software" class="nav-anim">
+          <a href="http://localhost:4000#software" class="nav-anim">
           
                 <span class="menu-icon lnr lnr-code"></span>
                 <span class="link-text">Software</span>
@@ -120,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </li>
         <!-- <li>
           
-          <a href="#blog" class="nav-anim">
+          <a href="http://localhost:4000#blog" class="nav-anim">
           
                 <span class="menu-icon lnr lnr-bubble"></span>
                 <span class="link-text">Blog</span>
@@ -139,55 +139,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span></span>
   </div>
         
-        <div class="content-area"> 
-    <div class="animated-sections">
-      <!-- Home section -->
-      <section data-id="home" class="animated-section start-page">
-        <div class="section-content vcentered">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12">
-                <div class="title-block">
-                  <h3>Diogo F. Soares</h3>
-                  <p>E-mail: dfsoares(at)ciencias.ulisboa.pt</p>
-                  <p>Office C6.3.38</p>
-                  <p>Diogo F. Soares is an Invited Assistant Professor at the Department of Informatics, Faculty of Sciences, 
-                    University of Lisbon, and a researcher at LASIGE, contributing to the Health and Biomedical Informatics 
-                    and Data and Systems Intelligence research lines. 
-                    He teaches courses in Programming and Data Science and holds a PhD in Informatics and an 
-                    MSc in Data Science from the University of Lisbon. His research focuses on patient-centered 
-                    machine learning, with involvement in European and National funded projects. 
-                    His primary research interests include Data Mining, Machine Learning, Unsupervised Learning Algorithms, and Biomedical Informatics.</p>
-                </div>
-              </div>
-            </div>
-        </div>
-      </section>
-      <!-- End Home section -->
-      <!-- Publications section -->
-      <section data-id="publications" class="animated-section">
-    <div class="page-title">
-      <h2>Publications</h2>
-    </div>
-    <div class="section-content">
-      <style>
-        .jumbotron{
-            padding:3%;
-            padding-bottom:10px;
-            padding-top:10px;
-            margin-top:10px;
-            margin-bottom:30px;
-        }
+        <div id="gridid" class="col-sm-12 col-xs-12">
+  <style>
+.jumbotron{
+    padding:3%;
+    padding-bottom:10px;
+    padding-top:10px;
+    margin-top:10px;
+    margin-bottom:30px;
+}
+</style>
 
-        .jumbotron h3{
-          margin-bottom: 20px;
-        }
+<div class="jumbotron">
+  <h3 id="preprints">Preprints</h3>
+  <ol class="bibliography" reversed="reversed"></ol>
+</div>
 
-        </style>
-        
-        
-        <div class="jumbotron">
-        <h3>Journal articles</h3>
-        <ol class="bibliography" reversed="reversed"><li><style>
+<div class="jumbotron">
+  <h3 id="refereed-journal-articles">Refereed journal articles</h3>
+  <ol class="bibliography" reversed="reversed"><li><style>
 .btn{
     margin-bottom:5px;
     padding-top:0px;
@@ -220,7 +190,7 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtexsoares2024comprehensive()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexsoares2024comprehensive()">BIB</button>
 
 
 
@@ -299,11 +269,11 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtexsoares2023triclustering()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexsoares2023triclustering()">BIB</button>
 
 
 
-<button class="btn btn-warning btm-sm"  onclick="toggleAbstractsoares2023triclustering()">ABSTRACT</button>
+<button class="btn btn-warning btm-sm" onclick="toggleAbstractsoares2023triclustering()">ABSTRACT</button>
 
 
 
@@ -379,7 +349,7 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtextavazzi2023artificial()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtextavazzi2023artificial()">BIB</button>
 
 
 
@@ -455,7 +425,7 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtexsoares2022learning()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexsoares2022learning()">BIB</button>
 
 
 
@@ -498,11 +468,11 @@ function toggleAbstractsoares2022learning(parameter) {
 }
 </script>
 </li></ol>
-        </div>
-        
-        <div class="jumbotron">
-        <h3>Conference Proceedings</h3>
-        <ol class="bibliography" reversed="reversed"><li><style>
+</div>
+
+<div class="jumbotron">
+  <h3 id="refereed-conference-proceedings">Refereed conference proceedings</h3>
+  <ol class="bibliography" reversed="reversed"><li><style>
 .btn{
     margin-bottom:5px;
     padding-top:0px;
@@ -535,7 +505,7 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtexbranco2023investigating()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexbranco2023investigating()">BIB</button>
 
 
 
@@ -609,7 +579,7 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtexbranco2023survival()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexbranco2023survival()">BIB</button>
 
 
 
@@ -683,7 +653,7 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtexnunes2022explaining()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexnunes2022explaining()">BIB</button>
 
 
 
@@ -757,7 +727,7 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtexbranco2022hierarchical()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexbranco2022hierarchical()">BIB</button>
 
 
 
@@ -831,7 +801,7 @@ pre{
 
 
 
-<button class="btn btn-danger btm-sm"  onclick="toggleBibtexsoares2021towards()">BIB</button>
+<button class="btn btn-danger btm-sm" onclick="toggleBibtexsoares2021towards()">BIB</button>
 
 
 
@@ -841,7 +811,7 @@ pre{
 <pre>@inproceedings{soares2021towards,
   title = {Towards triclustering-based classification of three-way clinical data: A case study on predicting non-invasive ventilation in als},
   author = {Soares, Diogo and Henriques, Rui and Gromicho, Marta and Pinto, Susana and de Carvalho, Mamede and Madeira, Sara C},
-  booktitle = {Practical Applications of Computational Biology \& Bioinformatics, 14th International Conference (PACBB 2020) 14},
+  booktitle = {Practical Applications of Computational Biology \&amp; Bioinformatics, 14th International Conference (PACBB 2020) 14},
   pages = {112--122},
   year = {2021},
   organization = {Springer International Publishing}
@@ -873,256 +843,9 @@ function toggleAbstractsoares2021towards(parameter) {
 }
 </script>
 </li></ol>
-        </div>
-    </div>
-  </section>
-      <!-- End Publications section -->
-      <!-- Teaching section -->
-      <section data-id="teaching" class="animated-section">
-    <div class="page-title">
-      <h2>Teaching</h2>
-    </div>
-    <style>
-      .jumbotron{
-          padding:5%;
-          padding-bottom:10px;
-          padding-top:20px;
-          margin-top:10px;
-          margin-bottom:30px;
-      }
+</div>
 
-      .ac-year{
-        display: inline-block;
-        font-size: small;
-        padding: 0px 5px;
-        color: inherit;
-        background-color: #222;
-        margin-bottom: 10px;
-      }
-
-    
-
-      </style>
-    <div class="section-content">
-        
-            <div class="jumbotron">
-              
-              <h4>Programming I</h4>
-              
-                <span class="ac-year">2024/2025</span>
-              
-              <!-- Programming I - ,  -->
-            </div>
-        
-            <div class="jumbotron">
-              
-              <h4>Construction of Software Systems</h4>
-              
-                <span class="ac-year">2023/2024</span>
-              
-              <!-- Construction of Software Systems - ,  -->
-            </div>
-        
-            <div class="jumbotron">
-              
-              <h4>Programming I (LTI)</h4>
-              
-                <span class="ac-year">2023/2024</span>
-              
-                <span class="ac-year">2022/2023</span>
-              
-              <!-- Programming I (LTI) - ,  -->
-            </div>
-        
-            <div class="jumbotron">
-              
-              <h4>Programming Labs</h4>
-              
-                <span class="ac-year">2022/2023</span>
-              
-              <!-- Programming Labs - ,  -->
-            </div>
-        
-            <div class="jumbotron">
-              
-              <h4>Intelligent Systems</h4>
-              
-                <span class="ac-year">2021/2022</span>
-              
-              <!-- Intelligent Systems - ,  -->
-            </div>
-        
-            <div class="jumbotron">
-              
-              <h4>Data Mining</h4>
-              
-                <span class="ac-year">2020/2021</span>
-              
-              <!-- Data Mining - ,  -->
-            </div>
-        
-            <div class="jumbotron">
-              
-              <h4>Machine Learning</h4>
-              
-                <span class="ac-year">2020/2021</span>
-              
-              <!-- Machine Learning - ,  -->
-            </div>
-        
-    </div>
-  </section>
-      <!-- End Teaching section -->
-      <!-- Software section -->
-      
-
-<section data-id="software" class="animated-section">
-    <div class="page-title">
-      <h2>Software</h2>
-    </div>
-    <div class="section-content">
-        <style>
-            img{
-              border-radius: 10px;
-            }
-            iframe {
-              width: 175px;
-              display: inline;
-              vertical-align:middle;
-            }
-            .col-md-3 {
-              margin:0;
-              padding:0;
-              margin-top:10px;
-              margin-bottom:10px;
-              display:block;
-              overflow:hidden;
-              text-align:center;
-              display: table-cell;
-              height: auto;
-              float: none;
-              background:white;
-              border-radius:20px;
-            }
-
-            h4{
-              margin-bottom: 20px;
-            }
-
-            .description{
-              display: block;
-              margin-top: 10px;
-            }
-            </style>
-            
-            
-            <div class="jumbotron">
-            <div class="row align-items-end">
-            <div class="col-md-12 col-sm-12">
-            <h4>G-HTric</h4>
-            
-            
-            
-            
-            <span class="description">  </span>
-
-            
-            </div>
-            </div>
-            </div>
-            
-            <div class="jumbotron">
-            <div class="row align-items-end">
-            <div class="col-md-12 col-sm-12">
-            <h4>Triclustering-based classifier</h4>
-            
-            
-            <a href="ddd" target="_blank"><button class="btn btn-info btn-sm">GIT</button></a>
-            
-            
-            <a href="dd" target="_blank"><button class="btn btn-danger btn-sm">PAPER</button></a> 
-            
-            
-            <span class="description"> dddd </span>
-
-            
-            </div>
-            </div>
-            </div>
-            
-    </div>
-  </section>
-  
-  
-      <!-- End Software section -->
-      <!-- Blog section -->
-      <section data-id="blog" class="animated-section">
-    <div class="page-title">
-      <h2>Blog</h2>
-    </div>
-    <div class="section-content">
-        <div class="row">
-        <div class="col-xs-12 col-sm-12">
-            <div class="blog-masonry two-columns clearfix">
-            
-            <!-- Blog Post 1 -->
-            <div class="item post-1">
-                <div class="blog-card">
-                <div class="media-block">
-                    <div class="category">
-                        <a href="#" title="View all posts in Design">Fun</a>
-                    </div>
-                    <a href="/fun/2024/05/31/great-mathematicians-and-physicists.html">
-                    
-                    <img src="assets/images/banner.jpg" alt="image">
-                    
-                    <div class="mask"></div>
-                    </a>
-                </div>
-                <div class="post-info">
-                    <div class="post-date">31 May 2024</div>
-                    <a href="/fun/2024/05/31/great-mathematicians-and-physicists.html">
-                    <h4 class="blog-item-title">Great Mathematicians and Physicists</h4>
-                    </a>
-                </div>
-                </div>
-            </div>
-            <!-- End of Blog Post 1 -->
-            
-            <!-- Blog Post 1 -->
-            <div class="item post-1">
-                <div class="blog-card">
-                <div class="media-block">
-                    <div class="category">
-                        <a href="#" title="View all posts in Design">LectureNotes</a>
-                    </div>
-                    <a href="/lecture/notes/1961/11/28/space-time.html">
-                    
-                    <img src="assets/images/blog_post_1_full.jpg" alt="image">
-                    
-                    <div class="mask"></div>
-                    </a>
-                </div>
-                <div class="post-info">
-                    <div class="post-date">28 Nov 1961</div>
-                    <a href="/lecture/notes/1961/11/28/space-time.html">
-                    <h4 class="blog-item-title">Space-Time</h4>
-                    </a>
-                </div>
-                </div>
-            </div>
-            <!-- End of Blog Post 1 -->
-            
-            </div>
-        </div>
-        </div>
-    </div>        
-
-
-</section>
-      <!-- End Blog section -->
-    </div>
-  </div>
+</div>
 
       </div>
     </div>
